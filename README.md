@@ -50,7 +50,3 @@ After running method 'compareSpeeds()' in TriesComparison.java, the console resu
 
 	  
 	  
-## License: 
-
-Free
-
