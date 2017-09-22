@@ -106,7 +106,7 @@ public class TrieNode<V> implements Comparable<TrieNode<V>>{
 	int numChildren;
 	
 	/**the children indices;
-	 * children[childrenIndices[i]] where 0 <= i < numChildren is the ith children. 
+	 * children[childrenIndices[i]] where 0 &lt;= i &lt; numChildren is the ith children. 
 	 */
 	transient int[] childrenIndices;
 	
