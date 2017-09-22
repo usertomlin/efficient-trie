@@ -307,6 +307,9 @@ public class TriesComparison {
 		
 		System.out.println("----------------------------------------------------------");
 		
+		/**
+		 * "get exact key-value node": get the node if it exists, and null if not 
+		 */
 		
 		long timeTaken7 = System.currentTimeMillis();
 
@@ -314,20 +317,21 @@ public class TriesComparison {
 			for (String word : keys) {
 				String prefix = word.substring(0, Math.min(word.length(), 3));
 				TrieNode<Integer> KeyValueNode1 = trie.getNode(prefix);
+				Integer value1 = KeyValueNode1.getValue();
 			}
 		}
 
-		System.out.println("Time taken to get exact key-value nodes by prefix for PrefixTrie: " + (System.currentTimeMillis() - timeTaken7) + " milliseconds.");
+		System.out.println("Time taken to get values by exact keys for PrefixTrie: " + (System.currentTimeMillis() - timeTaken7) + " milliseconds.");
 		
 		long timeTaken8 = System.currentTimeMillis();
 		for (int i = 0; i < 10; i++) {
 			for (String word : keys) {
 				String prefix = word.substring(0, Math.min(word.length(), 3));
-				Integer KeyValueNode2 = tree.getValueForExactKey(prefix);
+				Integer value2 = tree.getValueForExactKey(prefix);
 			}	
 		}
 				
-		System.out.println("Time taken to get exact key-value nodes by prefix for PrefixConcurrentRadixTree: " + (System.currentTimeMillis() - timeTaken8) + " milliseconds.");
+		System.out.println("Time taken to get values by exact keys for PrefixConcurrentRadixTree: " + (System.currentTimeMillis() - timeTaken8) + " milliseconds.");
 		
 	}
 	
