@@ -141,8 +141,8 @@ public class TriesComparison {
 	 * Time taken to get values by prefix for PrefixTrie: 501 milliseconds.
 	 * Time taken to get values by prefix for PrefixConcurrentRadixTree : 3307 milliseconds.
 	 * ----------------------------------------------------------
-	 * Time taken to get exact key-value nodes by prefix for PrefixTrie : 32 milliseconds.
-	 * Time taken to get exact key-value nodes by prefix for PrefixConcurrentRadixTree : 312 milliseconds.
+	 * Time taken to get values by exact keys for PrefixTrie : 46 milliseconds.
+	 * Time taken to get values by exact keys for PrefixConcurrentRadixTree : 312 milliseconds.
 	 * ----------------------------------------------------------
 	 */
 	public static void compareSpeeds()  {
