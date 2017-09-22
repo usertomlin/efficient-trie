@@ -1,14 +1,14 @@
-# simple-trie
+# efficient-trie
 
 A Java library for efficient implementation of prefix trie and suffix trie 
 
-See package 'simpletrie' in the src folder for examples and tests.
+See package 'efficient_trie' in the src folder for examples and tests.
 
-## Usage: 
+## Usage
 
-1. Add 'simple-trie-1.0.jar' to build path of a Java project, and refer to examples in SimpleTrieExamples.java to use this library.
+1. Add 'efficient-trie-1.0.jar' to build path of a Java project, and refer to examples in EfficientTrieExamples.java to use this library.
 
-2. To run the snippets for performance comparison with an another library 'concurrent-trees-2.4.0.jar', add both 'simple-trie-1.0.jar' and 'concurrent-trees-2.4.0.jar' to build path and run the snippets in TriesComparison.java. This repository is also an Eclipse Java project and so can be imported for testing with examples in the simpletrie package.
+2. To run the snippets for performance comparison with an another library 'concurrent-trees-2.4.0.jar', add both 'efficient-trie-1.0.jar' and 'concurrent-trees-2.4.0.jar' to build path and run the snippets in TriesComparison.java. This repository is also an Eclipse Java project and so can be imported for testing with examples in the efficient_trie package.
 
 
 Example for prefix trie and suffix trie construction:
@@ -25,9 +25,9 @@ SuffixTrie<Integer> suffixTrie = new SuffixTrie<Integer>(words2, values, scores)
 SuffixTrie<Integer> suffixTrie2 = new SuffixTrie<Integer>(words2, values);
 ``` 
 
-See the javadoc, examples in SimpleTrieExamples.java and TriesComparison.java, as well as the source codes, for APIs and method details.
+See the javadoc, examples in EfficientTrieExamples.java and TriesComparison.java, as well as the source codes, for APIs and method details.
 
-## Features: 
+## Features 
 
 An efficient, primitive array implementation of prefix trie and suffix trie. 
 

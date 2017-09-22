@@ -1,4 +1,4 @@
-package simpletrie.comparison;
+package efficient_trie.comparison;
 
 import java.io.BufferedReader;
 
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.linchimin.simpletrie.PrefixTrie;
-import org.linchimin.simpletrie.TrieNode;
+import org.linchimin.efficient_trie.PrefixTrie;
+import org.linchimin.efficient_trie.TrieNode;
 
 import com.googlecode.concurrenttrees.common.KeyValuePair;
 

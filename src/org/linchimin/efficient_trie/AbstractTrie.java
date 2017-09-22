@@ -1,4 +1,4 @@
-package org.linchimin.simpletrie;
+package org.linchimin.efficient_trie;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -66,13 +66,7 @@ abstract class AbstractTrie<V>  {
 		}
 		boolean allAdded = true;
 		for (int i = 0; i < keys.size(); i++) {
-			String element = keys.get(i);
-			V value = values.get(i);
-			int score = scores[i];
-			if (score <= 0){
-				score = 1;
-			}
-			boolean added = put(element, value, score);
+			boolean added = put(keys.get(i), values.get(i), scores[i]);
 			if (added == false){
 				allAdded = false;
 			}

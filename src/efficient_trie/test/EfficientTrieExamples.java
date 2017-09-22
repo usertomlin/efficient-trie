@@ -1,4 +1,4 @@
-package simpletrie.test;
+package efficient_trie.test;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -8,9 +8,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.linchimin.simpletrie.PrefixTrie;
-import org.linchimin.simpletrie.SuffixTrie;
-import org.linchimin.simpletrie.TrieNode;
+import org.linchimin.efficient_trie.PrefixTrie;
+import org.linchimin.efficient_trie.SuffixTrie;
+import org.linchimin.efficient_trie.TrieNode;
 
 
 
@@ -21,7 +21,7 @@ import org.linchimin.simpletrie.TrieNode;
  * @author Lin Chi-Min (v381654729@gmail.com)
  *
  */
-public class SimpleTrieExamples {
+public class EfficientTrieExamples {
 	
 	static String SUPPORTED_CHARS_TEST = "abcdefghijklmnopqrstuvwxyz0123456789,.-_:'";
 	
@@ -59,6 +59,8 @@ public class SimpleTrieExamples {
 		PrefixTrie<Integer> prefixTrie = new PrefixTrie<Integer>(keys, values, scores);
 		PrefixTrie<Integer> prefixTrie2 = new PrefixTrie<Integer>(keys, values);
 		
+		System.out.println("prefixTrie2.size() = " + prefixTrie2.size());
+
 //		prefixTrie.getBestKeyValueNodes("a", 1,2);
 //		prefixTrie.getBestKeyValueNodes(word, substringLength, numTopKeyValueNodes, comparator)
 //		prefixTrie.getBestKeyValueNodes(word, numTopKeyValueNodes, comparator)

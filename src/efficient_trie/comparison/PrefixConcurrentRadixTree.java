@@ -1,4 +1,4 @@
-package simpletrie.comparison;
+package efficient_trie.comparison;
 
 import java.util.ArrayList;
 import java.util.Iterator;

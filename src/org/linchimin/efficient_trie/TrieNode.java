@@ -1,4 +1,4 @@
-package org.linchimin.simpletrie;
+package org.linchimin.efficient_trie;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -56,6 +56,7 @@ public class TrieNode<V> implements Comparable<TrieNode<V>>{
 		}
 		CHAR_TO_INDEX_MAP = ciMap;
 		AbstractTrie.CHAR_TO_INDEX_MAP = ciMap;
+		
 	}
 
 	
@@ -99,12 +100,14 @@ public class TrieNode<V> implements Comparable<TrieNode<V>>{
 	
 
 	/**
-	 * current number of children,
-	 * or the current offset at 'childrenIndices'
+	 * current number of children;
+	 * the current offset at 'childrenIndices'
 	 */
 	int numChildren;
 	
-	
+	/**the children indices;
+	 * children[childrenIndices[i]] where 0 <= i < numChildren is the ith children. 
+	 */
 	transient int[] childrenIndices;
 	
 	List<TrieNode<V>> KeyValueNodes;
